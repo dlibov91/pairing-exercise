@@ -5,6 +5,16 @@ import java.util.*
 import kotlin.collections.HashMap
 
 object Fixtures {
+    fun orderRequestJson(): String {
+        return """
+    {
+      "order_id": "d30b102e-3e69-4e33-a3ab-6438f2be3ef6",
+      "organization_id": "797fa5e1-b78c-4e3f-b615-60df1a70be6b",
+      "customer_email": "example@example.com",
+      "total_amount": 12.34
+    }
+    """.trimIndent()
+    }
 
     fun orgRequestJsonNameBlank(): String {
         return "{\n" +
@@ -146,7 +156,6 @@ object Fixtures {
         data["email"] = "yourquestions@bbc.co.uk"
         return data
     }
-
 
 
 }
